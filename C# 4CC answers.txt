@@ -1,0 +1,46 @@
+S Tarun
+2235313
+C# CC
+using System;
+
+4)using System;
+
+
+namespace PrintoutTemplate
+{
+    public class tarun
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the Company Name");
+            string companyname = Console.ReadLine();
+            Console.WriteLine("Enter the Employee Name");
+            string employeename = Console.ReadLine();
+            Console.WriteLine("Enter the Project Name");
+            string projectname = Console.ReadLine();
+            Console.WriteLine("Enter the Year");
+            int year = Convert.ToInt32(Console.ReadLine());
+            entireMessage(companyname, employeename, projectname, year);
+
+        }
+        public static void headerMeaasge(string companyname)
+        {
+            Console.WriteLine(companyname + " Employee Information");
+        }
+        public static void footerMessage(int year)
+        {
+            Console.WriteLine("Copyright " + year);
+            Console.WriteLine("All Rights Reserved.");
+        }
+        public static void entireMessage(string companyname, string employeename, string projectname, int year)
+        {
+            headerMeaasge(companyname);
+            Console.WriteLine(employeename);
+            Console.WriteLine(projectname);
+            footerMessage(year);
+
+        }
+
+    }
+
+}
